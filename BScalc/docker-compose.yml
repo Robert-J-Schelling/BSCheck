@@ -1,0 +1,37 @@
+version: "3"
+services:
+  node:
+    container_name: frontend
+    restart: always
+    build: ./sample-react
+    environment:
+      - NODE_ENV = production
+    volumes:
+      - ./sample-react:/app 
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    links:
+      - backend
+    networks: 
+      - to_api
+
+  backend:
+    container_name: backend
+    build:
+      context: .
+      dockerfile: docker/flask/Dockerfile
+    environment:
+      - FLASK_APP = "api.py"
+    volumes:
+      - ./api:/app
+    ports:
+      - "5000:5000"
+    command: gunicorn wsgi:app -c ./gunicorn-config.py
+    networks: 
+      - to_api
+
+networks:
+  to_api:
+    driver: bridge
