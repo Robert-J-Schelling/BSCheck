@@ -15,8 +15,10 @@
 
 3. Once everything finished loading, run the command "docker-compose up".
 
+<img src="https://github.com/Robert-J-Schelling/BSCheck/blob/master/Screenshots/Installation_Step3.gif" width="800" height="400" />
+
 4. If Windows asks for file sharing permission press "allow".
 
 <img src="https://github.com/Robert-J-Schelling/BSCheck/blob/master/Screenshots/Allow_Sharing.png" width="400" height="200" />
 
-5. Open localhost:80 in browser of your choice.
+5. Open http://localhost:80 in a browser of your choice.
