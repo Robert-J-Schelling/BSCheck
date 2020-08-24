@@ -9,7 +9,7 @@
 
 <img src="https://github.com/Robert-J-Schelling/BSCheck/blob/master/Screenshots/Installation_Step1.gif" width="800" height="400" />
 
-2. Run the command "docker-compose build".
+2. Run the command "docker-compose build". (Running it the first time may take a while)
 
 <img src="https://github.com/Robert-J-Schelling/BSCheck/blob/master/Screenshots/Installation_Step2.gif" width="800" height="400" />
 
@@ -17,7 +17,7 @@
 
 <img src="https://github.com/Robert-J-Schelling/BSCheck/blob/master/Screenshots/Installation_Step3.gif" width="800" height="400" />
 
-4. If Windows asks for file sharing permission press "allow".
+4. If Windows asks for file sharing permission press "Share it".
 
 <img src="https://github.com/Robert-J-Schelling/BSCheck/blob/master/Screenshots/Allow_Sharing.png" width="400" height="200" />
 
