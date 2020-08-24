@@ -4,6 +4,14 @@
 <img src="https://github.com/Robert-J-Schelling/BSCheck/blob/master/Screenshots/BSCalc_sample.gif" width="800" height="400" />
 
 ## Tech/Framworks Used
+
+* Node.js
+* Flask
+* AmCharts
+* Docker
+* materialUI
+* React.js
+
 ## Installation
 1. Using Command Prompt, navigate to folder containing docker-compose.yml file.
 
