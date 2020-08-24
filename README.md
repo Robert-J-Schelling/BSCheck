@@ -7,9 +7,7 @@
 
 * Node.js
 * Flask
-* AmCharts
 * Docker
-* materialUI
 * React.js
 * Nginx
 * Gunicorn
