@@ -1,6 +1,6 @@
 # Black Scholes Calculator
 ## Screenshots
-![](BSCalc_sample.gif)
+![](https://github.com/Robert-J-Schelling/BSCheck/blob/master/Screenshots/BSCalc_sample.gif)
 ## Tech/Framworks Used
 ## Installation
 1. Open Command Prompt.
