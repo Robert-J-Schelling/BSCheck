@@ -27,7 +27,7 @@
 
 <img src="https://github.com/Robert-J-Schelling/BSCheck/blob/master/Screenshots/Installation_Step3.gif" width="800" height="400" />
 
-4. If Windows asks for file sharing permission press "Share it".
+4. If Docker asks for file sharing permission press "Share it".
 
 <img src="https://github.com/Robert-J-Schelling/BSCheck/blob/master/Screenshots/Allow_Sharing.png" width="400" height="200" />
 
