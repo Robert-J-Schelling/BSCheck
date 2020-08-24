@@ -11,6 +11,8 @@
 * Docker
 * materialUI
 * React.js
+* Nginx
+* Gunicorn
 
 ## Installation
 1. Using Command Prompt, navigate to folder containing docker-compose.yml file.
