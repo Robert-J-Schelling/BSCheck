@@ -1,6 +1,8 @@
 # Black Scholes Calculator
 ## Screenshots
+
 <img src="https://github.com/Robert-J-Schelling/BSCheck/blob/master/Screenshots/BSCalc_sample.gif" width="800" height="400" />
+
 ## Tech/Framworks Used
 ## Installation
 1. Using Command Prompt, navigate to folder containing docker-compose.yml file.
