@@ -86,20 +86,20 @@ Here we copy the static files to /usr/share/nginx/html (this is where the path w
 COPY --from=build-stage /app/build/ /usr/share/nginx/html
 ```
 
-  #### [src](https://github.com/Robert-J-Schelling/BSCheck/tree/master/BScalc/sample-react/src) Folder:
-  The files within this folder are what will be displayed on the screen. All the visuals come from here. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  #### [src](https://github.com/Robert-J-Schelling/BSCheck/tree/master/BScalc/sample-react/src) Folder:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  The files within this folder are what will be displayed on the screen. All the visuals come from here. 
 
-  ##### [App.js](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/src/App.js)
-  App.js is the main file for the frontend. Here we implement all the other components (ex. Form.js, Riskgraph.js etc). 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ##### [App.js](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/src/App.js)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  App.js is the main file for the frontend. Here we implement all the other components (ex. Form.js, Riskgraph.js etc). 
 
-  ##### [Form.js](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/src/Form.js)
-  This component is in charge of everything related to the input the user can make. All the inputfields and their values are tracked here. When the user presses submit, the values are passed to the backend. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ##### [Form.js](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/src/Form.js)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This component is in charge of everything related to the input the user can make. All the inputfields and their values are tracked here. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; When the user presses submit, the    values are passed to the backend. 
 
-  ##### [infoDialog.js](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/src/InfoDialog.js)]
-  This component is information box that pops up every time you reload the page. The window contains a brief explanation on how to use the Black Scholes Calculator.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ##### [infoDialog.js](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/src/InfoDialog.js)]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  This component is information box that pops up every time you reload the page. The window contains a brief explanation on how to use the  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Black Scholes Calculator.
 
-  ##### [Riskgraph.js](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/src/Riskgraph.js)
-  Theis component generates the graph that shows you the profit/loss over time of your option.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ##### [Riskgraph.js](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/src/Riskgraph.js)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Theis component generates the graph that shows you the profit/loss over time of your option.
 
 #### Folder and File structure:
 The basic file and folder structure of the project was created with the npx create-react-app my-app command.
