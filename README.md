@@ -98,4 +98,7 @@ The WSGI server makes it possible to run Python applications on a web server. Fo
 The configuration can be found in [gunicorn-config.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/gunicorn-config.py)
 
 #### [Dockerfile](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/docker/flask/Dockerfile):
+```
+RUN pip install -r requirements.txt
+```
 
