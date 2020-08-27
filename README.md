@@ -91,3 +91,9 @@ The files within this folder are what will be displayed on the screen. All the v
 
 #### Folder and File structure:
 The basic file and folder structure of the project was created with the npx create-react-app my-app command.
+
+### Backend:
+#### Gunicorn:
+The WSGI server makes it possible to run Python applications on a web server. For more concrete information [click here](https://www.fullstackpython.com/wsgi-servers.html)
+The configuration can be found in [gunicorn-config.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/gunicorn-config.py)
+
