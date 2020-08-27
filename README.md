@@ -39,10 +39,17 @@ The most important things to note can be derived from examining the [nginx.conf]
 
 The first line indicates that our web server (Nginx) is going to listen to port 80 for incoming requests. 
 ```
-listen 80;
+  listen 80;
 ```
 
 Location / indicates the default files that will be opened when a user sends a request to the web server. We chose index.html from the directory /usr/share/nginx/html. More on where this path is derived from later.
+```
+  location / {
+    root /usr/share/nginx/html;
+    index index.html index.htm;
+    try_files $uri $uri/ /index.html =404;
+  }
+```
 
 location /BSCalcu/impliedVol , location /BSCalcu/premium and location /BSCalcu/graphLines are the endpoints exposed by the backend in the api.py file. 
 
