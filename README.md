@@ -101,4 +101,5 @@ The configuration can be found in [gunicorn-config.py](https://github.com/Robert
 ```
 RUN pip install -r requirements.txt
 ```
+[requirements.txt](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/requirements.txt)
 
