@@ -30,3 +30,27 @@
 <img src="https://github.com/Robert-J-Schelling/BSCheck/blob/master/Screenshots/Allow_Sharing.png" width="400" height="200" />
 
 5. Open http://localhost:80 in a browser of your choice.
+
+## In-depth Explanation
+
+### Frontend Container:
+#### Nginx:
+The most important things to note can be derived from examining the [nginx.conf](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/nginx.conf) file.
+
+The first line indicates that our web server (Nginx) is going to listen to port 80 for incoming requests. 
+'''
+listen 80;
+'''
+
+Location / indicates the default files that will be opened when a user sends a request to the web server. We chose index.html from the directory /usr/share/nginx/html. More on where this path is derived from later.
+
+location /BSCalcu/impliedVol , location /BSCalcu/premium and location /BSCalcu/graphLines are the endpoints exposed by the backend in the api.py file. 
+
+#### Dockerfile:
+The lines … are all the libraries needed for the application. RUN npm run build creates all the static files that are being served by the nginx. COPY … this command copies the build to /usr/share/nginx/html (this is where the path was derived from in the nginx.conf file)
+
+#### src Folder:
+The files within this folder are what will be displayed on the screen. All the visuals come from here. The App.js file is the main file of the program and implements the other components such as (Form.js, RiskGraph.js etc.).
+
+#### Folder and File structure:
+The basic file and folder structure of the project was created with the npx create-react-app my-app command.
