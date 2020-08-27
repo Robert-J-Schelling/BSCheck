@@ -52,7 +52,6 @@ Location / indicates the default files that will be opened when a user sends a r
 ```
 
 location /BSCalcu/impliedVol , location /BSCalcu/premium and location /BSCalcu/graphLines are the endpoints exposed by the backend in the api.py file. 
-
 ```
   location /BSCalcu/premium {
     proxy_pass http://backend:5000;
@@ -69,7 +68,6 @@ location /BSCalcu/impliedVol , location /BSCalcu/premium and location /BSCalcu/g
 
 #### Dockerfile:
 The lines … are all the libraries needed for the application. 
-
 ```
 RUN npm install 
 .
@@ -78,7 +76,15 @@ RUN npm install
 RUN npm i @date-io/date-fns@1.x date-fns
 ```
 
-RUN npm run build creates all the static files that are being served by the nginx. COPY … this command copies the build to /usr/share/nginx/html (this is where the path was derived from in the nginx.conf file)
+RUN npm run build creates all the static files that are being served by the nginx. 
+```
+RUN npm run build
+```
+
+COPY … this command copies the build to /usr/share/nginx/html (this is where the path was derived from in the nginx.conf file)
+```
+COPY --from=build-stage /app/build/ /usr/share/nginx/html
+```
 
 #### src Folder:
 The files within this folder are what will be displayed on the screen. All the visuals come from here. The App.js file is the main file of the program and implements the other components such as (Form.js, RiskGraph.js etc.).
