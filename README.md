@@ -106,3 +106,4 @@ RUN pip install -r requirements.txt
 [get_graphLines.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/get_graphLines.py)
 [get_impliedVol.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/get_impliedVol.py)
 [get_premium.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/get_premium.py)
+[server_responses.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/server_responses.py)
