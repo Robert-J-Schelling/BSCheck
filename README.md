@@ -96,11 +96,11 @@ App.js is the main file for the frontend. Here we implement all the other compon
 ##### [Form.js](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/src/Form.js)
 This component is in charge of everything related to the input the user can make. All the inputfields and their values are tracked here. When the user presses submit, the  values are passed to the backend. 
 
-##### [infoDialog.js](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/src/InfoDialog.js)]
-  This component is information box that pops up every time you reload the page. The window contains a brief explanation on how to use the   Black Scholes Calculator.
+##### [infoDialog.js](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/src/InfoDialog.js)
+This component is information box that pops up every time you reload the page. The window contains a brief explanation on how to use the   Black Scholes Calculator.
 
 ##### [Riskgraph.js](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/src/Riskgraph.js)
-  Theis component generates the graph that shows you the profit/loss over time of your option.
+Theis component generates the graph that shows you the profit/loss over time of your option.
 
 #### Folder and File structure:
 The basic file and folder structure of the project was created with the npx create-react-app my-app command.
@@ -111,12 +111,13 @@ The WSGI server makes it possible to run Python applications on a web server. Fo
 The configuration can be found in [gunicorn-config.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/gunicorn-config.py)
 
 #### [Dockerfile](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/docker/flask/Dockerfile):
+This installs all the libraries needed for the backend to function. Check the [requirements.txt](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/requirements.txt) file to see the list of required libraries.
 ```
 RUN pip install -r requirements.txt
 ```
-[requirements.txt](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/requirements.txt)
-[api.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/api.py)
-[get_graphLines.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/get_graphLines.py)
-[get_impliedVol.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/get_impliedVol.py)
-[get_premium.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/get_premium.py)
-[server_responses.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/server_responses.py)
+
+##### [api.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/api.py)
+##### [get_graphLines.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/get_graphLines.py)
+##### [get_impliedVol.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/get_impliedVol.py)
+##### [get_premium.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/get_premium.py)
+##### [server_responses.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/server_responses.py)
