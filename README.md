@@ -86,7 +86,7 @@ COPY … this command copies the build to /usr/share/nginx/html (this is where t
 COPY --from=build-stage /app/build/ /usr/share/nginx/html
 ```
 
-#### src Folder:
+#### [src](https://github.com/Robert-J-Schelling/BSCheck/tree/master/BScalc/sample-react/src) Folder:
 The files within this folder are what will be displayed on the screen. All the visuals come from here. The App.js file is the main file of the program and implements the other components such as (Form.js, RiskGraph.js etc.).
 
 #### Folder and File structure:
