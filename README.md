@@ -65,9 +65,10 @@ These lines of code connect the frontend to the backend. Each location being a U
     proxy_pass http://backend:5000;
   }
 ```
+
 </br>
 </br>
-</br>
+
 #### [Dockerfile](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/Dockerfile):
 Every line npm install, installs a library needed for the application. 
 ```
@@ -87,6 +88,9 @@ Here we copy the static files to /usr/share/nginx/html (this is where the path w
 ```
 COPY --from=build-stage /app/build/ /usr/share/nginx/html
 ```
+
+</br>
+</br>
 
 #### [src](https://github.com/Robert-J-Schelling/BSCheck/tree/master/BScalc/sample-react/src) Folder:
 The files within this folder are what will be displayed on the screen. All the visuals come from here. 
