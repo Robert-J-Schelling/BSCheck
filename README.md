@@ -120,7 +120,7 @@ RUN pip install -r requirements.txt
 This is the main file of the backend. Here, the URLs that the backend uses to return data are specified. 
 
 ##### [get_graphLines.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/get_graphLines.py)
-This file is in charge of calculation all the premium values needed to draw the risk graph. 
+This file is in charge of calculation all the values needed to draw the risk graph. 
 
 ##### [get_impliedVol.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/get_impliedVol.py)
 This file is in charge of calculating implied volatility.
