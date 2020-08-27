@@ -68,7 +68,17 @@ location /BSCalcu/impliedVol , location /BSCalcu/premium and location /BSCalcu/g
 ```
 
 #### Dockerfile:
-The lines … are all the libraries needed for the application. RUN npm run build creates all the static files that are being served by the nginx. COPY … this command copies the build to /usr/share/nginx/html (this is where the path was derived from in the nginx.conf file)
+The lines … are all the libraries needed for the application. 
+
+```
+RUN npm install 
+.
+.
+.
+RUN npm i @date-io/date-fns@1.x date-fns
+```
+
+RUN npm run build creates all the static files that are being served by the nginx. COPY … this command copies the build to /usr/share/nginx/html (this is where the path was derived from in the nginx.conf file)
 
 #### src Folder:
 The files within this folder are what will be displayed on the screen. All the visuals come from here. The App.js file is the main file of the program and implements the other components such as (Form.js, RiskGraph.js etc.).
