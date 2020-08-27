@@ -38,9 +38,9 @@
 The most important things to note can be derived from examining the [nginx.conf](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/nginx.conf) file.
 
 The first line indicates that our web server (Nginx) is going to listen to port 80 for incoming requests. 
-'''
+```
 listen 80;
-'''
+```
 
 Location / indicates the default files that will be opened when a user sends a request to the web server. We chose index.html from the directory /usr/share/nginx/html. More on where this path is derived from later.
 
