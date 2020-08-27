@@ -66,7 +66,7 @@ location /BSCalcu/impliedVol , location /BSCalcu/premium and location /BSCalcu/g
   }
 ```
 
-#### Dockerfile:
+#### [Dockerfile](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/Dockerfile):
 The lines … are all the libraries needed for the application. 
 ```
 RUN npm install 
@@ -96,4 +96,6 @@ The basic file and folder structure of the project was created with the npx crea
 #### Gunicorn:
 The WSGI server makes it possible to run Python applications on a web server. For more concrete information [click here](https://www.fullstackpython.com/wsgi-servers.html)
 The configuration can be found in [gunicorn-config.py](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/api/gunicorn-config.py)
+
+#### [Dockerfile](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/docker/flask/Dockerfile):
 
