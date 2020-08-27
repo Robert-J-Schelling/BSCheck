@@ -53,6 +53,20 @@ Location / indicates the default files that will be opened when a user sends a r
 
 location /BSCalcu/impliedVol , location /BSCalcu/premium and location /BSCalcu/graphLines are the endpoints exposed by the backend in the api.py file. 
 
+```
+  location /BSCalcu/premium {
+    proxy_pass http://backend:5000;
+  }
+
+  location /BSCalcu/impliedVol {
+    proxy_pass http://backend:5000;
+  }
+
+  location /BSCalcu/graphLines {
+    proxy_pass http://backend:5000;
+  }
+```
+
 #### Dockerfile:
 The lines … are all the libraries needed for the application. RUN npm run build creates all the static files that are being served by the nginx. COPY … this command copies the build to /usr/share/nginx/html (this is where the path was derived from in the nginx.conf file)
 
