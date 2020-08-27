@@ -37,12 +37,12 @@
 #### Nginx:
 The most important things to note can be derived from examining the [nginx.conf](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/nginx.conf) file.
 
-The first line indicates that our web server (Nginx) is going to listen to port 80 for incoming requests. 
+This line sets our web server to receive requests from port 80. 
 ```
   listen 80;
 ```
 
-Location / indicates the default files that will be opened when a user sends a request to the web server. We chose index.html from the directory /usr/share/nginx/html. More on where this path is derived from later.
+Location / is the default URL of the web server. And is the first thing that will be displayed when the user interacts with the server. The code inside the brackets specifies which files will be used for the default URL. The path to the file is /usr/share/nginx/html and the name of the file thatll be used is index.html.
 ```
   location / {
     root /usr/share/nginx/html;
@@ -51,7 +51,7 @@ Location / indicates the default files that will be opened when a user sends a r
   }
 ```
 
-location /BSCalcu/impliedVol , location /BSCalcu/premium and location /BSCalcu/graphLines are the endpoints exposed by the backend in the api.py file. 
+These lines of code connect the frontend to the backend. Each location being a URL that the backend uses to return data.
 ```
   location /BSCalcu/premium {
     proxy_pass http://backend:5000;
@@ -67,7 +67,7 @@ location /BSCalcu/impliedVol , location /BSCalcu/premium and location /BSCalcu/g
 ```
 
 #### [Dockerfile](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/Dockerfile):
-The lines … are all the libraries needed for the application. 
+Every line npm install, installs a library needed for the application. 
 ```
 RUN npm install 
 .
@@ -76,18 +76,23 @@ RUN npm install
 RUN npm i @date-io/date-fns@1.x date-fns
 ```
 
-RUN npm run build creates all the static files that are being served by the nginx. 
+This command turn development code in static files. The files created from this command are what will be sent to the user by nginx.
 ```
 RUN npm run build
 ```
 
-COPY … this command copies the build to /usr/share/nginx/html (this is where the path was derived from in the nginx.conf file)
+Here we copy the static files to /usr/share/nginx/html (this is where the path was derived from in the nginx.conf file)
 ```
 COPY --from=build-stage /app/build/ /usr/share/nginx/html
 ```
 
 #### [src](https://github.com/Robert-J-Schelling/BSCheck/tree/master/BScalc/sample-react/src) Folder:
-The files within this folder are what will be displayed on the screen. All the visuals come from here. The App.js file is the main file of the program and implements the other components such as (Form.js, RiskGraph.js etc.).
+The files within this folder are what will be displayed on the screen. All the visuals come from here. 
+
+##### [App.js](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/src/App.js)
+##### [Form.js](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/src/Form.js)
+##### [infoDialog.js](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/src/InfoDialog.js)
+##### [Riskgraph.js](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/src/Riskgraph.js)
 
 #### Folder and File structure:
 The basic file and folder structure of the project was created with the npx create-react-app my-app command.
