@@ -65,7 +65,9 @@ These lines of code connect the frontend to the backend. Each location being a U
     proxy_pass http://backend:5000;
   }
 ```
-
+</br>
+</br>
+</br>
 #### [Dockerfile](https://github.com/Robert-J-Schelling/BSCheck/blob/master/BScalc/sample-react/Dockerfile):
 Every line npm install, installs a library needed for the application. 
 ```
